@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/fiji_background.jpg'); /*Image found at: https://www.islands.com/mamanuca-islands-where-survivor-films-in-fiji/ */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+/* It took me a while browsing W3 to get the shading correct for the background. I was finally able
+to figure it out though. */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.jeff-image {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+html, body {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .jeff-image {
+        width: 200px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .jeff-image {
+        width: 250px;
+    }
+}
+
